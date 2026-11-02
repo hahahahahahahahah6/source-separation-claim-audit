@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "source-separation-claim-audit"
+version = "0.1.0"
+description = "Offline documentation claim auditor"
+requires-python = ">=3.9"
+license = "MIT"
+readme = "README.md"
+
+[project.scripts]
+source-separation-claim-audit = "source_separation_claim_audit.audit:main"
+
+[tool.setuptools.packages.find]
+include = ["source_separation_claim_audit*"]
